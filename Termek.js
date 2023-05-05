@@ -5,7 +5,7 @@ class Termek {
     #allapot;
     constructor(adat, szuloElem) {
         this.#adat = adat;
-        szuloElem.append(`<div class ="Termekek">
+        szuloElem.append(`<div class ="Termekek card col-lg-3 col-md-4 col-sm-6">
         <p>${adat.nev}</p><p>${adat.fajta}</p><p>${adat.ar}</p><button type="button" class="btn btn-primary">Hozzaad</button></div>`);
         this.#divElem = szuloElem.children("div:last-child");
         this.#buttonELEM = this.#divElem.children("button");
